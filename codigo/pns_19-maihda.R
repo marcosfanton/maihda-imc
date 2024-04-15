@@ -1,6 +1,7 @@
 library(tidyverse) 
 library(here) 
 library(PNSIBGE) # Extração de microdados PNS
+library(skimr)
 
 # Construção do banco de dados####
 # Seleção de variáveis
@@ -89,3 +90,4 @@ write.csv(pns19,
 
 # Carregar banco
 raw_19 <- read.csv("dados/raw_19.csv")
+
